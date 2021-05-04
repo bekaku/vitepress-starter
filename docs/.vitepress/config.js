@@ -2,7 +2,7 @@
 module.exports = {
   title: "Hello VitePress",
   description: "Just playing around.",
-  base: "/",
+  base: "/docs",
   lang: "en-US",
   markdown: {
     lineNumbers: true,
@@ -37,9 +37,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      //   sidebar: "auto",
-      // "/guide/": primarySidebar, // everything in the /about/ subdirectory
-      // "/api/": primarySidebar, // contact page
+        // sidebar: "auto",
       '/guide/': getGuideSidebar(),
       '/config/': getConfigSidebar(),
       '/': getGuideSidebar()
@@ -55,7 +53,7 @@ function getGuideSidebar() {
       text: 'Guide',
       children: [
         { text: 'Getting Started', link: '/guide/' },
-        { text: 'Chapter one', link: '/guide/one' },
+        { text: 'Chapter One', link: '/guide/getting-start' },
         { text: 'Chapter two', link: '/guide/two' },
         { text: 'API', link: '/api/' },
       ]

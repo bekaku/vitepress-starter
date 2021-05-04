@@ -1,26 +1,37 @@
----
-title: Guid index
----
+<!-- ## Table of Contents
+[[toc]] -->
 
-## Table of Contents
-[[toc]]
+<!-- ![Tux, the Linux mascot](/logo.png) -->
 
+<a href="https://www.youtube.com/watch?v=ojLrp2rmh0I
+" target="_blank"><img src="http://img.youtube.com/vi/ojLrp2rmh0I/0.jpg" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+## Reference
+1. [Vitepress official docs](https://vitepress.vuejs.org/)
+2. [markdown-it](https://markdown-it.github.io/)
+3. [Guthub vitepress docs Example](https://github.com/vuejs/vitepress/tree/master/docs)
+4. [Guthub markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+5. [Markdown basic syntax](https://www.markdownguide.org/basic-syntax/)
+6. [Markdown extended syntax](https://www.markdownguide.org/extended-syntax/)
+7. [A list of emojis](https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json)
+7. [A list of Code syntax highlighting](https://prismjs.com/#languages-list)
 
 ## Routing!
 
-[docs/index.md](/) -> /
+<!-- [docs/index.md](/) -> /
 
-[docs/guide/one.md](/guide/one) -> /one
+[docs/guide/one.md](/guide/getting-start) -> /one
 
 [docs/api/index.md](/api/) -> /api/
 
-[docs/guide/two.md](/guide/two) -> /guide/two
+[docs/guide/two.md](/guide/two) -> /guide/two -->
 
 ### All these options work!
 
-[docs/guide/one.md](/guide/one) | 
+<!-- [docs/guide/one.md](/guide/getting-start) | 
 [docs/api/index.md](/api/) |
-[docs/guide/two.md](/guide/two)
+[docs/guide/two.md](/guide/two) -->
 
 '# Hello VitePress' 
 | Tables        | Are           | Cool  |
