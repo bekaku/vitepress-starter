@@ -1,9 +1,4 @@
-const primarySidebar = [
-    { text: "Home", link: "/" },
-    { text: "Guide", link: "/guide/" },
-    { text: "API", link: "/api/" }
-];
-
+//https://github.com/vuejs/vitepress/tree/master/docs
 module.exports = {
   title: "Hello VitePress",
   description: "Just playing around.",
