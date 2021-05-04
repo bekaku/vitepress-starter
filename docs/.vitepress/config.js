@@ -20,6 +20,8 @@ module.exports = {
 
     lastUpdated: "Last Updated",
     // repo: 'vuejs/vitepress',
+    displayAllHeaders: true, // Default: false
+    activeHeaderLinks: false, // Default: true
     nav: [
       { text: "Home", link: "/" },
       { text: "Guide", link: "/guide/" },
@@ -41,11 +43,69 @@ module.exports = {
     ],
     sidebar: {
       //   sidebar: "auto",
-      "/guide/": primarySidebar, // everything in the /about/ subdirectory
-      "/api/": primarySidebar, // contact page
-
+      // "/guide/": primarySidebar, // everything in the /about/ subdirectory
+      // "/api/": primarySidebar, // contact page
+      '/guide/': getGuideSidebar(),
+      '/config/': getConfigSidebar(),
+      '/': getGuideSidebar()
       // we don't need to do anything to index
       // because the default sidebar is created via page headings
     },
   },
 };
+
+function getGuideSidebar() {
+  return [
+    {
+      text: 'Guide',
+      children: [
+        { text: 'Getting Started', link: '/guide/' },
+        { text: 'Chapter one', link: '/guide/one' },
+        { text: 'Chapter two', link: '/guide/two' },
+        { text: 'API', link: '/api/' },
+      ]
+    },
+    {
+      text: 'Introduction',
+      children: [
+        { text: 'What is VitePress?', link: '/' },
+        { text: 'Getting Started', link: '/guide/getting-started' },
+        { text: 'Configuration', link: '/guide/configuration' },
+        { text: 'Asset Handling', link: '/guide/assets' },
+        { text: 'Markdown Extensions', link: '/guide/markdown' },
+        { text: 'Using Vue in Markdown', link: '/guide/using-vue' },
+        { text: 'Deploying', link: '/guide/deploy' }
+      ]
+    },
+    {
+      text: 'Advanced',
+      children: [
+        { text: 'Frontmatter', link: '/guide/frontmatter' },
+        { text: 'Global Computed', link: '/guide/global-computed' },
+        { text: 'Global Component', link: '/guide/global-component' },
+        { text: 'Customization', link: '/guide/customization' },
+        {
+          text: 'Differences from Vuepress',
+          link: '/guide/differences-from-vuepress'
+        }
+      ]
+    }
+  ]
+}
+
+function getConfigSidebar() {
+  return [
+    {
+      text: 'App Config',
+      children: [{ text: 'Basics', link: '/config/basics' }]
+    },
+    {
+      text: 'Theme Config',
+      children: [
+        { text: 'Homepage', link: '/config/homepage' },
+        { text: 'Algolia Search', link: '/config/algolia-search' },
+        { text: 'Carbon Ads', link: '/config/carbon-ads' }
+      ]
+    }
+  ]
+}

@@ -2,6 +2,9 @@
 title: Guid index
 ---
 
+## Table of Contents
+[[toc]]
+
 
 ## Routing!
 
@@ -46,10 +49,6 @@ head:
 ---
 :tada: :100:
 
-
-Table of Contents
----
-[[toc]]
 
 
 ## Custom Containers
