@@ -1,3 +1,8 @@
+<!-- ## Table of Contents
+[[toc]] -->
+
+<!-- ![Tux, the Linux mascot](/logo.png) -->
+
 <a href="https://www.youtube.com/watch?v=ojLrp2rmh0I
 " target="_blank"><img src="http://img.youtube.com/vi/ojLrp2rmh0I/0.jpg" 
 alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
@@ -14,7 +19,6 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 
 ## Routing!
 
-
 <!-- [docs/index.md](/) -> /
 
 [docs/guide/one.md](/guide/getting-start) -> /one
@@ -29,7 +33,7 @@ alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
 [docs/api/index.md](/api/) |
 [docs/guide/two.md](/guide/two) -->
 
-# Hello VitePress
+'# Hello VitePress' 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
@@ -56,6 +60,8 @@ head:
 ---
 :tada: :100:
 
+
+
 ## Custom Containers
 
 ::: tip
@@ -74,6 +80,7 @@ This is a dangerous warning
 Danger zone, do not proceed
 :::
 
+Syntax Highlighting in Code Blocks
 ---
 ```js
 export default {
@@ -110,6 +117,10 @@ export default {
   }
 }
 ```
+
+- Line ranges: for example {5-8}, {3-10}, {10-17}
+- Multiple single lines: for example {4,7,9}
+- Line ranges and single lines: for example {4,7-13,16,23-27,40}
 
 ```js{1,4,6-7}
 export default { // Highlighted
